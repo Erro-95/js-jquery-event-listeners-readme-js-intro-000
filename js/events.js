@@ -14,7 +14,7 @@ function pressIt(){
   $('#typing').on('keydown', e => {
     key = e.key
     if (key === 'g'.toUpperCase()){
-      alert(`${e.key} has been pressed`)
+      alert(`${key} has been pressed`)
     }
   })
 }
