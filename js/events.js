@@ -14,14 +14,14 @@ function pressIt(){
   $('#typing').on('keydown', e => {
     key = e.key
     if (key === 'g'.toUpperCase()){
-      retuen alert(`${key} has been pressed`)
+      alert(`${key} has been pressed`)
     }
   })
 }
 
 function submitIt(){
   $(':submit').on('submit', e => {
-    return alert("Your form is going to be submitted now.")
+    alert("Your form is going to be submitted now.")
   })
 }
 
