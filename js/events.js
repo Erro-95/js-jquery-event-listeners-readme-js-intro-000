@@ -20,7 +20,7 @@ function pressIt(){
 }
 
 function submitIt(){
-  $('form :submit').on('submit', e => {
+  $('form').on('submit', e => {
     alert("Your form is going to be submitted now.")
   })
 }
