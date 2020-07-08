@@ -11,7 +11,7 @@ function frameIt(){
 }
 
 function pressIt(){
-  $('input#typing').spyOn('keydown', e => {
+  $('input#typing').on('keydown', e => {
     key = e.key
     if (key === 'g'.toUpperCase()){
       alert(`${key} has been pressed`)
