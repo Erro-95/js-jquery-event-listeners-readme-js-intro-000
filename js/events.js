@@ -14,7 +14,7 @@ function pressIt(){
   $('form').on('keydown', e => {
     key = e.which
     if (key === 71){
-      alert(`${key} has been pressed`)
+      alert(`${e} has been pressed`)
     }
   })
 }
