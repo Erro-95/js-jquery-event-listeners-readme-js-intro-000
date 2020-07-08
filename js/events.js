@@ -13,7 +13,7 @@ function frameIt(){
 function pressIt(){
   $('#typing').on('keydown', e => {
     key = e.key
-    if (e.key === 'g'.toUpperCase()){
+    if (key === 'g'.toUpperCase()){
       alert(`${e.key} has been pressed`)
     }
   })
