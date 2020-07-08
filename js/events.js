@@ -11,7 +11,7 @@ function frameIt(){
 }
 
 function pressIt(){
-  $('#typing').on('keydown', e => {
+  $('input#typing').on('keydown', e => {
     key = e.key
     if (key === 'g'.toUpperCase()){
       alert(`${key} has been pressed`)
@@ -20,7 +20,7 @@ function pressIt(){
 }
 
 function submitIt(){
-  $(':submit').on('submit', e => {
+  $('input:submit').on('submit', e => {
     alert("Your form is going to be submitted now.")
   })
 }
