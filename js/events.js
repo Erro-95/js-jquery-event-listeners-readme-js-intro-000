@@ -1,7 +1,34 @@
-//define functions here
+function getIt(){
+  $('p').on('click', e => {
+    alert('Hey!')
+  })
+}
+
+function frameIt(){
+  $('img').on('load', e => {
+    $('img').classList.add('.tasty')
+  })
+}
+
+function pressIt(){
+  $('#typing').on('keydown', e => {
+    if (e.key === 'g'.toUpperCase()){
+      alert(`${e.key} has been pressed`)
+    }
+  })
+}
+
+function submitIt(){
+  $(':submit').on('submit', e => {
+    alert("Your form is going to be submitted now.")
+  })
+}
 
 $(document).ready(function(){
 
-// call functions here
+getIt()
+frameIt()
+pressIt()
+submitIt()
 
 });
